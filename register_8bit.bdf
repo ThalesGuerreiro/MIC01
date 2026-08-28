@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 296 184 464 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LOAD" (rect 5 0 35 12)(font "Arial" ))
+	(text "LOAD" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 296 200 464 216)
+	(rect 296 216 464 232)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "IN_LOAD[7..0]" (rect 5 0 79 12)(font "Arial" ))
+	(text "CLOCK" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -53,9 +53,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 296 264 464 280)
+	(rect 296 120 464 136)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "IN[7..0]" (rect 5 0 43 12)(font "Arial" ))
+	(text "D[7..0]" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -69,9 +69,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 296 280 464 296)
+	(rect 296 152 464 168)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLOCK" (rect 5 0 43 12)(font "Arial" ))
+	(text "PL[7..0]" (rect 5 0 44 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -82,6 +82,22 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 848 120 1024 136)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "OUT[7..0]" (rect 90 0 138 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (symbol
 	(rect 664 176 728 224)
@@ -1212,16 +1228,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 464 208)
-	(pt 504 208)
-	(bus)
-)
-(connector
-	(pt 464 272)
-	(pt 504 272)
-	(bus)
-)
-(connector
 	(pt 776 200)
 	(pt 776 248)
 )
@@ -1606,10 +1612,6 @@ applicable agreement for further details.
 	(pt 536 1624)
 )
 (connector
-	(pt 464 288)
-	(pt 504 288)
-)
-(connector
 	(text "CLOCK" (rect 674 272 711 284)(font "Arial" ))
 	(pt 744 288)
 	(pt 664 288)
@@ -1650,86 +1652,6 @@ applicable agreement for further details.
 	(pt 664 784)
 )
 (connector
-	(text "IN_LOAD[0]" (rect 560 192 620 204)(font "Arial" ))
-	(pt 560 208)
-	(pt 600 208)
-)
-(connector
-	(text "IN_LOAD[1]" (rect 560 440 620 452)(font "Arial" ))
-	(pt 560 456)
-	(pt 600 456)
-)
-(connector
-	(text "IN_LOAD[2]" (rect 560 688 620 700)(font "Arial" ))
-	(pt 560 704)
-	(pt 600 704)
-)
-(connector
-	(text "IN_LOAD[3]" (rect 560 936 620 948)(font "Arial" ))
-	(pt 560 952)
-	(pt 600 952)
-)
-(connector
-	(text "IN_LOAD[4]" (rect 560 1184 620 1196)(font "Arial" ))
-	(pt 560 1200)
-	(pt 600 1200)
-)
-(connector
-	(text "IN_LOAD[5]" (rect 560 1432 620 1444)(font "Arial" ))
-	(pt 560 1448)
-	(pt 600 1448)
-)
-(connector
-	(text "IN_LOAD[6]" (rect 560 1680 620 1692)(font "Arial" ))
-	(pt 560 1696)
-	(pt 600 1696)
-)
-(connector
-	(text "IN_LOAD[7]" (rect 560 1928 620 1940)(font "Arial" ))
-	(pt 560 1944)
-	(pt 600 1944)
-)
-(connector
-	(text "IN[0]" (rect 674 256 698 268)(font "Arial" ))
-	(pt 744 272)
-	(pt 664 272)
-)
-(connector
-	(text "IN[1]" (rect 674 504 698 516)(font "Arial" ))
-	(pt 744 520)
-	(pt 664 520)
-)
-(connector
-	(text "IN[2]" (rect 674 752 698 764)(font "Arial" ))
-	(pt 744 768)
-	(pt 664 768)
-)
-(connector
-	(text "IN[3]" (rect 674 1000 698 1012)(font "Arial" ))
-	(pt 744 1016)
-	(pt 664 1016)
-)
-(connector
-	(text "IN[4]" (rect 674 1248 698 1260)(font "Arial" ))
-	(pt 744 1264)
-	(pt 664 1264)
-)
-(connector
-	(text "IN[5]" (rect 674 1496 698 1508)(font "Arial" ))
-	(pt 744 1512)
-	(pt 664 1512)
-)
-(connector
-	(text "IN[6]" (rect 674 1744 698 1756)(font "Arial" ))
-	(pt 744 1760)
-	(pt 664 1760)
-)
-(connector
-	(text "IN[7]" (rect 674 1992 698 2004)(font "Arial" ))
-	(pt 744 2008)
-	(pt 664 2008)
-)
-(connector
 	(text "OUT[0]" (rect 818 256 853 268)(font "Arial" ))
 	(pt 808 272)
 	(pt 864 272)
@@ -1768,6 +1690,105 @@ applicable agreement for further details.
 	(text "OUT[7]" (rect 818 1992 853 2004)(font "Arial" ))
 	(pt 808 2008)
 	(pt 864 2008)
+)
+(connector
+	(pt 464 160)
+	(pt 504 160)
+	(bus)
+)
+(connector
+	(pt 464 224)
+	(pt 504 224)
+)
+(connector
+	(pt 464 128)
+	(pt 504 128)
+	(bus)
+)
+(connector
+	(pt 808 128)
+	(pt 848 128)
+	(bus)
+)
+(connector
+	(text "D[0]" (rect 674 256 695 268)(font "Arial" ))
+	(pt 744 272)
+	(pt 664 272)
+)
+(connector
+	(text "D[1]" (rect 674 504 695 516)(font "Arial" ))
+	(pt 744 520)
+	(pt 664 520)
+)
+(connector
+	(text "D[2]" (rect 674 752 695 764)(font "Arial" ))
+	(pt 744 768)
+	(pt 664 768)
+)
+(connector
+	(text "D[3]" (rect 674 1000 695 1012)(font "Arial" ))
+	(pt 744 1016)
+	(pt 664 1016)
+)
+(connector
+	(text "D[4]" (rect 674 1248 695 1260)(font "Arial" ))
+	(pt 744 1264)
+	(pt 664 1264)
+)
+(connector
+	(text "D[5]" (rect 674 1496 695 1508)(font "Arial" ))
+	(pt 744 1512)
+	(pt 664 1512)
+)
+(connector
+	(text "D[6]" (rect 674 1744 695 1756)(font "Arial" ))
+	(pt 744 1760)
+	(pt 664 1760)
+)
+(connector
+	(text "D[7]" (rect 674 1992 695 2004)(font "Arial" ))
+	(pt 744 2008)
+	(pt 664 2008)
+)
+(connector
+	(text "PL[0]" (rect 560 192 585 204)(font "Arial" ))
+	(pt 560 208)
+	(pt 600 208)
+)
+(connector
+	(text "PL[1]" (rect 560 440 585 452)(font "Arial" ))
+	(pt 560 456)
+	(pt 600 456)
+)
+(connector
+	(text "PL[2]" (rect 560 688 585 700)(font "Arial" ))
+	(pt 560 704)
+	(pt 600 704)
+)
+(connector
+	(text "PL[3]" (rect 560 936 585 948)(font "Arial" ))
+	(pt 560 952)
+	(pt 600 952)
+)
+(connector
+	(text "PL[4]" (rect 560 1184 585 1196)(font "Arial" ))
+	(pt 560 1200)
+	(pt 600 1200)
+)
+(connector
+	(text "PL[5]" (rect 560 1432 585 1444)(font "Arial" ))
+	(pt 560 1448)
+	(pt 600 1448)
+)
+(connector
+	(text "PL[6]" (rect 560 1680 585 1692)(font "Arial" ))
+	(pt 560 1696)
+	(pt 600 1696)
+)
+(connector
+	(text "PL[7]" (rect 560 1928 585 1940)(font "Arial" ))
+	(pt 560 1944)
+	(pt 600 1944)
 )
 (junction (pt 600 208))
 (junction (pt 536 192))
