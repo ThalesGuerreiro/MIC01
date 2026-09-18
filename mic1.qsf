@@ -49,6 +49,11 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Aluno/Matheus/MIC01-main/register_32bit.vwf"
 set_global_assignment -name VECTOR_WAVEFORM_FILE register_32bit.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE register_8bit.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE mem_4x3_b.vwf
@@ -79,8 +84,9 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_1bit_or.vwf
 set_global_assignment -name BDF_FILE register_8bit.bdf
 set_global_assignment -name BDF_FILE MDR.bdf
 set_global_assignment -name BDF_FILE MAR.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Aluno/Matheus/MIC01-main/register_32bit.vwf"
+set_global_assignment -name BDF_FILE PC.bdf
+set_global_assignment -name BDF_FILE SP.bdf
+set_global_assignment -name BDF_FILE LV.bdf
+set_global_assignment -name BDF_FILE CPP.bdf
+set_global_assignment -name BDF_FILE TOS.bdf
+set_global_assignment -name BDF_FILE OPC.bdf
