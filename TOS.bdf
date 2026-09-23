@@ -249,10 +249,52 @@ applicable agreement for further details.
 		(circle (rect 31 12 39 20))
 	)
 )
-(connector
-	(pt 544 208)
-	(pt 616 208)
-	(bus)
+(symbol
+	(rect 688 400 752 448)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 37 26 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
+(symbol
+	(rect 504 216 536 232)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
 )
 (connector
 	(pt 440 256)
@@ -286,11 +328,6 @@ applicable agreement for further details.
 	(text "OUT_ENABLE_A" (rect 530 288 614 300)(font "Arial" ))
 	(pt 616 304)
 	(pt 536 304)
-)
-(connector
-	(text "CLOCK" (rect 546 272 583 284)(font "Arial" ))
-	(pt 616 288)
-	(pt 536 288)
 )
 (connector
 	(pt 952 272)
@@ -337,3 +374,46 @@ applicable agreement for further details.
 	(pt 952 272)
 	(pt 952 264)
 )
+(connector
+	(text "CLOCK_T" (rect 762 408 811 420)(font "Arial" ))
+	(pt 752 424)
+	(pt 832 424)
+)
+(connector
+	(text "CLOCK" (rect 626 400 663 412)(font "Arial" ))
+	(pt 616 416)
+	(pt 688 416)
+)
+(connector
+	(text "MIR[13]" (rect 626 416 664 428)(font "Arial" ))
+	(pt 616 432)
+	(pt 688 432)
+)
+(connector
+	(text "CLOCK_T" (rect 538 272 587 284)(font "Arial" ))
+	(pt 616 288)
+	(pt 536 288)
+)
+(connector
+	(pt 616 320)
+	(pt 520 320)
+)
+(connector
+	(pt 616 240)
+	(pt 520 240)
+)
+(connector
+	(pt 520 232)
+	(pt 520 240)
+)
+(connector
+	(pt 520 240)
+	(pt 520 320)
+)
+(connector
+	(text "C[31..0]" (rect 546 192 586 204)(font "Arial" ))
+	(pt 616 208)
+	(pt 536 208)
+	(bus)
+)
+(junction (pt 520 240))

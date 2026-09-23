@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 192 208 360 224)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LOAD" (rect 5 0 35 12)(font "Arial" ))
+	(text "LOAD" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 192 240 360 256)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLOCK" (rect 5 0 43 12)(font "Arial" ))
+	(text "CLOCK" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 192 272 360 288)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MIR[35..0]" (rect 5 0 57 12)(font "Arial" ))
+	(text "MIR[35..0]" (rect 5 0 56 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -552,6 +552,21 @@ applicable agreement for further details.
 		(circle (rect 31 12 39 20))
 	)
 )
+(symbol
+	(rect 440 184 472 200)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst10" (rect 3 5 32 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(pt 760 176)
 	(pt 824 176)
@@ -561,10 +576,6 @@ applicable agreement for further details.
 	(pt 760 192)
 	(pt 824 192)
 	(bus)
-)
-(connector
-	(pt 360 504)
-	(pt 360 424)
 )
 (connector
 	(pt 408 424)
@@ -686,15 +697,6 @@ applicable agreement for further details.
 	(pt 264 408)
 )
 (connector
-	(pt 360 504)
-	(pt 568 504)
-)
-(connector
-	(text "CLOCK" (rect 274 488 311 500)(font "Arial" ))
-	(pt 264 504)
-	(pt 360 504)
-)
-(connector
 	(pt 880 416)
 	(pt 888 416)
 )
@@ -780,4 +782,29 @@ applicable agreement for further details.
 	(pt 376 280)
 	(bus)
 )
-(junction (pt 360 504))
+(connector
+	(pt 360 424)
+	(pt 352 424)
+)
+(connector
+	(pt 352 504)
+	(pt 352 424)
+)
+(connector
+	(text "CLOCK" (rect 274 488 311 500)(font "Arial" ))
+	(pt 264 504)
+	(pt 352 504)
+)
+(connector
+	(pt 352 504)
+	(pt 568 504)
+)
+(connector
+	(pt 544 208)
+	(pt 456 208)
+)
+(connector
+	(pt 456 208)
+	(pt 456 200)
+)
+(junction (pt 352 504))
