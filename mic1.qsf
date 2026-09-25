@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY registrador_32bits
+set_global_assignment -name TOP_LEVEL_ENTITY TOS
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:26:58  MAY 26, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -49,11 +49,25 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Aluno/Matheus/MIC01-main/register_32bit.vwf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE TOS.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE SP.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE PC.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE OPC.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MDR.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MBR.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MAR.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE LV.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE H.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DATAPATH4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DATAPATH.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPP.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS_PC_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS_MDR_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS_MBR_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS_MAR_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS.vwf
+set_global_assignment -name BDF_FILE REGISTER_BANK.bdf
+set_global_assignment -name BDF_FILE H.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE register_32bit.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE register_8bit.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE mem_4x3_b.vwf
@@ -90,3 +104,8 @@ set_global_assignment -name BDF_FILE LV.bdf
 set_global_assignment -name BDF_FILE CPP.bdf
 set_global_assignment -name BDF_FILE TOS.bdf
 set_global_assignment -name BDF_FILE OPC.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Aluno/Matheus/MIC01-main/MIC01-main/TOS.vwf"

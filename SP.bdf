@@ -21,22 +21,6 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 200 192 368 208)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "C[31..0]" (rect 5 0 45 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 200 224 368 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "LOAD" (rect 5 0 34 12)(font "Arial" ))
@@ -84,10 +68,26 @@ applicable agreement for further details.
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect 200 192 368 208)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "IN_C[31..0]" (rect 5 0 63 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 824 176 1000 192)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "B[31..0]" (rect 90 0 128 12)(font "Arial" ))
+	(text "OUT_B[31..0]" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -411,26 +411,12 @@ applicable agreement for further details.
 	(pt 880 256)
 )
 (connector
-	(text "MIR[1]" (rect 786 264 819 276)(font "Arial" ))
-	(pt 776 280)
-	(pt 824 280)
-)
-(connector
 	(pt 872 280)
 	(pt 888 280)
 )
 (connector
 	(pt 880 296)
 	(pt 880 312)
-)
-(connector
-	(pt 824 312)
-	(pt 776 312)
-)
-(connector
-	(text "MIR[0]" (rect 786 296 819 308)(font "Arial" ))
-	(pt 880 312)
-	(pt 872 312)
 )
 (connector
 	(pt 880 232)
@@ -477,9 +463,23 @@ applicable agreement for further details.
 	(pt 448 296)
 )
 (connector
-	(text "C[31..0]" (rect 474 168 514 180)(font "Arial" ))
+	(text "IN_C[31..0]" (rect 474 168 531 180)(font "Arial" ))
 	(pt 464 184)
 	(pt 544 184)
 	(bus)
+)
+(connector
+	(pt 872 312)
+	(pt 880 312)
+)
+(connector
+	(text "MIR[1]" (rect 786 264 819 276)(font "Arial" ))
+	(pt 776 280)
+	(pt 824 280)
+)
+(connector
+	(text "MIR[0]" (rect 790 296 823 308)(font "Arial" ))
+	(pt 824 312)
+	(pt 776 312)
 )
 (junction (pt 448 216))

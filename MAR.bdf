@@ -21,22 +21,6 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 160 184 328 200)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "C[31..0]" (rect 5 0 45 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 160 216 328 232)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "LOAD" (rect 5 0 34 12)(font "Arial" ))
@@ -71,7 +55,23 @@ applicable agreement for further details.
 	(input)
 	(rect 160 280 328 296)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MIR[35..0]" (rect 5 0 57 12)(font "Arial" ))
+	(text "MIR[35..0]" (rect 5 0 56 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 160 184 328 200)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "IN_C[31..0]" (rect 5 0 63 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -235,12 +235,6 @@ applicable agreement for further details.
 	(pt 456 240)
 )
 (connector
-	(text "C[31..0]" (rect 466 160 506 172)(font "Arial" ))
-	(pt 456 176)
-	(pt 544 176)
-	(bus)
-)
-(connector
 	(pt 760 192)
 	(pt 808 192)
 	(bus)
@@ -293,5 +287,11 @@ applicable agreement for further details.
 (connector
 	(pt 328 256)
 	(pt 376 256)
+)
+(connector
+	(text "IN_C[31..0]" (rect 466 160 523 172)(font "Arial" ))
+	(pt 456 176)
+	(pt 544 176)
+	(bus)
 )
 (junction (pt 440 208))

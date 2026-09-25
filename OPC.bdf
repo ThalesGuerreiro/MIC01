@@ -21,22 +21,6 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 240 208 408 224)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "C[31..0]" (rect 5 0 45 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 240 240 408 256)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "LOAD" (rect 5 0 34 12)(font "Arial" ))
@@ -84,10 +68,26 @@ applicable agreement for further details.
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect 240 208 408 224)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "IN_C[31..0]" (rect 5 0 63 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 864 192 1040 208)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "B[31..0]" (rect 90 0 128 12)(font "Arial" ))
+	(text "OUT_B[31..0]" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -347,11 +347,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 512 200)
-	(pt 584 200)
-	(bus)
-)
-(connector
 	(pt 408 248)
 	(pt 432 248)
 )
@@ -437,19 +432,6 @@ applicable agreement for further details.
 	(pt 912 304)
 )
 (connector
-	(pt 920 312)
-	(pt 920 336)
-)
-(connector
-	(text "MIR[0]" (rect 826 320 859 332)(font "Arial" ))
-	(pt 920 336)
-	(pt 912 336)
-)
-(connector
-	(pt 816 336)
-	(pt 864 336)
-)
-(connector
 	(text "MIR[2]" (rect 826 256 859 268)(font "Arial" ))
 	(pt 816 272)
 	(pt 864 272)
@@ -488,5 +470,24 @@ applicable agreement for further details.
 (connector
 	(pt 488 232)
 	(pt 488 312)
+)
+(connector
+	(text "IN_C[31..0]" (rect 521 184 578 196)(font "Arial" ))
+	(pt 584 200)
+	(pt 504 200)
+	(bus)
+)
+(connector
+	(pt 920 312)
+	(pt 920 336)
+)
+(connector
+	(pt 912 336)
+	(pt 920 336)
+)
+(connector
+	(text "MIR[0]" (rect 828 320 861 332)(font "Arial" ))
+	(pt 816 336)
+	(pt 864 336)
 )
 (junction (pt 488 232))

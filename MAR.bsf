@@ -20,14 +20,14 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 232 144)
+	(rect 16 16 240 144)
 	(text "MAR" (rect 5 0 32 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "C[31..0]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
-		(text "C[31..0]" (rect 21 27 64 41)(font "Arial" (font_size 8)))
+		(text "IN_C[31..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "IN_C[31..0]" (rect 21 27 82 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -52,13 +52,13 @@ applicable agreement for further details.
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
-		(pt 216 32)
+		(pt 224 32)
 		(output)
 		(text "DATA_ADDR[31..0]" (rect 0 0 110 14)(font "Arial" (font_size 8)))
-		(text "DATA_ADDR[31..0]" (rect 85 27 195 41)(font "Arial" (font_size 8)))
-		(line (pt 216 32)(pt 200 32)(line_width 3))
+		(text "DATA_ADDR[31..0]" (rect 93 27 203 41)(font "Arial" (font_size 8)))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 200 112))
+		(rectangle (rect 16 16 208 112))
 	)
 )
