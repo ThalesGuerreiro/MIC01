@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY MBR
+set_global_assignment -name TOP_LEVEL_ENTITY shifter
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:26:58  MAY 26, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
