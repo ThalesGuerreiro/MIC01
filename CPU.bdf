@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 784 208 998 224)
+	(rect 824 208 1038 224)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "DATA_MEM_OUT[31..0]" (rect 90 0 208 12)(font "Arial" ))
 	(pt 0 8)
@@ -117,7 +117,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 776 224 999 240)
+	(rect 824 224 1047 240)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "DATA_MEM_ADDR[31..0]" (rect 90 0 217 12)(font "Arial" ))
 	(pt 0 8)
@@ -410,6 +410,22 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
+	(text "CLOCK" (rect 370 168 407 180)(font "Arial" ))
+	(pt 360 184)
+	(pt 464 184)
+)
+(connector
+	(text "MIR[35..0]" (rect 370 184 421 196)(font "Arial" ))
+	(pt 360 200)
+	(pt 464 200)
+	(bus)
+)
+(connector
+	(text "LOADN" (rect 370 152 407 164)(font "Arial" ))
+	(pt 360 168)
+	(pt 464 168)
+)
+(connector
 	(text "OUT_MBR[7..0]" (rect 1024 248 1101 260)(font "Arial" ))
 	(pt 1024 264)
 	(pt 1104 264)
@@ -421,19 +437,6 @@ applicable agreement for further details.
 	(pt 1104 312)
 )
 (connector
-	(pt 688 280)
-	(pt 1104 280)
-)
-(connector
-	(pt 688 296)
-	(pt 1104 296)
-)
-(connector
-	(text "CLOCK" (rect 370 168 407 180)(font "Arial" ))
-	(pt 360 184)
-	(pt 464 184)
-)
-(connector
 	(pt 1312 280)
 	(pt 1384 280)
 	(bus)
@@ -441,32 +444,6 @@ applicable agreement for further details.
 (connector
 	(pt 1312 264)
 	(pt 1384 264)
-	(bus)
-)
-(connector
-	(pt 688 248)
-	(pt 824 248)
-	(bus)
-)
-(connector
-	(pt 688 232)
-	(pt 776 232)
-	(bus)
-)
-(connector
-	(pt 688 216)
-	(pt 784 216)
-	(bus)
-)
-(connector
-	(text "OUT_MBR[7..0]" (rect 754 248 831 260)(font "Arial" ))
-	(pt 824 264)
-	(pt 744 264)
-	(bus)
-)
-(connector
-	(pt 688 200)
-	(pt 824 200)
 	(bus)
 )
 (connector
@@ -480,13 +457,36 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "MIR[35..0]" (rect 370 184 421 196)(font "Arial" ))
-	(pt 360 200)
-	(pt 464 200)
+	(pt 688 280)
+	(pt 1104 280)
+)
+(connector
+	(pt 688 296)
+	(pt 1104 296)
+)
+(connector
+	(text "OUT_MBR[7..0]" (rect 754 248 831 260)(font "Arial" ))
+	(pt 824 264)
+	(pt 744 264)
 	(bus)
 )
 (connector
-	(text "LOADN" (rect 370 152 407 164)(font "Arial" ))
-	(pt 360 168)
-	(pt 464 168)
+	(pt 688 200)
+	(pt 824 200)
+	(bus)
+)
+(connector
+	(pt 688 248)
+	(pt 824 248)
+	(bus)
+)
+(connector
+	(pt 688 216)
+	(pt 824 216)
+	(bus)
+)
+(connector
+	(pt 688 232)
+	(pt 824 232)
+	(bus)
 )
